@@ -9,20 +9,167 @@
       href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/2fb09ecdc6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
     <title>Pre entrega 3</title>
   </head>
   <body>
-    <main id="container">
-      <div>
-        <h1>CARRITO DE COMPRAS</h1>
-      </div>
+<!-- NAVBAR -->
+    <section id="nav">
+      <nav class="navbar bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand">Workshop</a>
+<!-- MODAL -->
+<!-- Boton agregar un producto -->
+<button
+type="button"
+class="btn btn-primary"
+data-bs-toggle="modal"
+data-bs-target="#exampleModal"
+>
+Agregar un producto
+</button>
+<div
+class="modal fade"
+id="exampleModal"
+tabindex="-1"
+aria-labelledby="exampleModalLabel"
+aria-hidden="true"
+>
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      
+<!-- Contenido del carrito -->
+      <h1 class="modal-title fs-5" id="exampleModalLabel">
+       Agrega tu propio producto
+      </h1>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="modal-body">
+      
+<!-- Formulario -->
+<form class="row g-3">
+  <div class="col-md-6">
+    <label for="nombreProducto" class="form-label">Nombre</label>
+    <input type="text" class="form-control" id="nombreProducto">
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Password</label>
+    <input type="password" class="form-control" id="inputPassword4">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress" class="form-label">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress2" class="form-label">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">City</label>
+    <input type="text" class="form-control" id="inputCity">
+  </div>
+  <div class="col-md-4">
+    <label for="inputState" class="form-label">State</label>
+    <select id="inputState" class="form-select">
+      <option selected>Choose...</option>
+      <option>...</option>
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label for="inputZip" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="inputZip">
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+    </div>
+  </div>
+  
+  
+  
+</form>
 
-      <button id="agregar-btn">Agregar productos</button>
-      <button id="mostrar-btn">Mostrar carrito</button>
-      <button id="borrar-btn">Quitar producto</button>
+    </div>
+    <div class="modal-footer">
+      
+      <button type="button" class="btn btn-primary">
+        Agregar
+      </button>
+    </div>
+  </div>
+</div>
+</div>
+           <!-- Boton de carrito -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+            <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    
+<!-- Contenido del carrito -->
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                     Carrito de compras
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">...</div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Seguir comprando
+                    </button>
+                    <button type="button" class="btn btn-danger">
+                      Finalizar compra
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div></i
+          >
+        </div>
+      </nav>
+    </section>
+    <main id="container">
+      <section id="productos"></section>
     </main>
-    <script src="./Producto.js"></script>
-    <script src="./app.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./js/Producto.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>

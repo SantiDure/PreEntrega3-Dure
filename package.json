@@ -1,0 +1,23 @@
+{
+  "name": "preentrega3-dure",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SantiDure/PreEntrega3-Dure.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SantiDure/PreEntrega3-Dure/issues"
+  },
+  "homepage": "https://github.com/SantiDure/PreEntrega3-Dure#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}
